@@ -6,8 +6,13 @@ import startError from "./startup/error";
 import startDb from "./startup/db";
 import startRoutes from "./startup/routes";
 import startPrivateKey from "./startup/privateKey";
+import fs from "fs";
+import https from "https";
 
 const app = express();
+const key = fs.readFileSync("./private.key");
+const certificate = fs.readFileSync("./certificate.crt");
+const credentials = { key, certificate };
 
 startEnv();
 startProd(app);
@@ -18,7 +23,9 @@ startRoutes(app);
 startPrivateKey();
 
 const port = process.env.PORT || 3000;
+const httpsPort = 3001;
 
 app.listen(port, () => console.info(`Listening on port ${port}`));
+https.createServer(credentials, app).listen(httpsPort);
 
 export default app;
