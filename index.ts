@@ -13,6 +13,7 @@ const app = express();
 const key = fs.readFileSync("./private.key");
 const certificate = fs.readFileSync("./certificate.crt");
 const credentials = { key, certificate };
+const httpsServer = https.createServer(credentials, app);
 
 startEnv();
 startProd(app);
@@ -26,6 +27,6 @@ const port = process.env.PORT || 3000;
 const httpsPort = 3001;
 
 app.listen(port, () => console.info(`Listening on port ${port}`));
-https.createServer(credentials, app).listen(httpsPort);
+httpsServer.listen(httpsPort);
 
 export default app;
