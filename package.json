@@ -1,5 +1,5 @@
 {
-  "name": "backend",
+  "name": "studieux-api",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -7,7 +7,8 @@
     "dev": "nodemon index.ts",
     "start": "npm run tsc && node index.js",
     "tsc": "tsc",
-    "test": "jest --watchAll --verbose"
+    "test": "jest --watchAll --verbose",
+    "seed": "ts-node seed.ts"
   },
   "keywords": [],
   "author": "",
