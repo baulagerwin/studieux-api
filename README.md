@@ -1,5 +1,5 @@
 
-# Studieux API
+# Introduction
 
 The backend application that powers the [studieux-web](https://github.com/baulagerwin/studieux-web).
 ## Requirements
