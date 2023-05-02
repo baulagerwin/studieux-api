@@ -1,7 +1,9 @@
+# Studieux API
 
-# Introduction
+## Introduction
 
 The backend application that powers the [studieux-web](https://github.com/baulagerwin/studieux-web).
+
 ## Requirements
 
 Install the following requirements first before proceeding.
@@ -10,6 +12,7 @@ Install the following requirements first before proceeding.
 - [MongoDB](https://www.mongodb.com/) - NoSQL Database
 - [Node](https://nodejs.org/en) - JavaScript Runtime Environment
 - [NPM](https://www.npmjs.com/) - Node Package Manager
+
 ## Installation
 
 Follow these instructions to run this project on your local machine for development and testing purposes.
@@ -19,6 +22,7 @@ Follow these instructions to run this project on your local machine for developm
 ```bash
   git clone https://github.com/baulagerwin/studieux-api.git
 ```
+
 2. Create a .env file with this content
 
 ```bash
@@ -50,12 +54,15 @@ Follow these instructions to run this project on your local machine for developm
 ```
 
 7. Enjoy!
+
 ## Built With
--   Node JS
--   Express
--   TypeScript
--   MongoDB
+
+- Node JS
+- Express
+- TypeScript
+- MongoDB
+
 ## Acknowledgements
 
- -  [Mongoose](https://mongoosejs.com/) - ORM
- -  [Joi](https://joi.dev) - Data Validator
+- [Mongoose](https://mongoosejs.com/) - ORM
+- [Joi](https://joi.dev) - Data Validator
